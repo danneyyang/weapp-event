@@ -22,8 +22,6 @@
 ![](https://github.com/danneyyang/weapp-event/blob/master/img/dc2.jpeg)
 ![](https://github.com/danneyyang/weapp-event/blob/master/img/dc3.jpeg)
 ![](https://github.com/danneyyang/weapp-event/blob/master/img/dc4.jpeg)
-![](https://github.com/danneyyang/weapp-event/blob/master/img/dc5.jpeg)
-![](https://github.com/danneyyang/weapp-event/blob/master/img/dc6.jpeg)
 
 说到这里就不得不说“云梦”的微信小程序版本了，在小程序开始公测后，我们也在第一时间将“云梦”的基本功能移植到了小程序平台上。
 整个过程相当顺利，除了小程序的IDE还不是太稳定外，基本上没啥大问题。
