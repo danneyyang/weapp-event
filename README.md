@@ -11,6 +11,24 @@
 
 目前微信小程序官方SDK还没有提供 Event API 来帮助开发者实现页面间通信，所以我们今天来看看，自己如何实现这样一个简单的小工具。
 
+## 开始前先打个广告 ##
+强烈推荐我司出品的好用到违反广告法的助眠软件————云梦
+“云梦”可以使你保持良好作息规律，将生物钟调节到最佳状态，令生活工作增强动力，保持效率的同时心情舒畅。
+
+只能用好评如潮来形如这款软件了，[点此立即下载](http://dj.soundario.com/download.php)
+
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc1.jpeg)
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc2.jpeg)
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc3.jpeg)
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc4.jpeg)
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc5.jpeg)
+![](https://github.com/danneyyang/weapp-event/blob/master/img/dc6.jpeg)
+
+说到这里就不得不说“云梦”的微信小程序版本了，在小程序开始公测后，我们也在第一时间将“云梦”的基本功能移植到了小程序平台上。
+整个过程相当顺利，除了小程序的IDE还不是太稳定外，基本上没啥大问题。
+开发过程和React-Native基本相似，大概一天时间就搞定了。
+
+
 ## Quick And Dirty ##
 我们知道，在小程序里面一个页面的变化，是通过调用 setData 函数来实现的。所以想做到在二级页面里让一级页面产生变化，最 Quick And Dirty 的做法就是把一级页面的 this 传入到二级页面去，这样我们在二级页面调用 page1.setData(…) 就可以立即引发外部的变化。
 
@@ -328,4 +346,4 @@ fn.call(this, args)
 讲到这里就基本上差不多了，因为 Event 模块持有了 Page 的 this，所以一定要在 Page 的 Unload 函数中调用 event.remove(…)，不然会造成内存泄露。
 
 ## 源代码 ##
-event.js 的完整源代码请见 <https://github.com/danneyyang/weapp-event>
+event.js 的完整源代码和Demo请见 <https://github.com/danneyyang/weapp-event>
